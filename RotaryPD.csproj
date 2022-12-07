@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{48191FB3-2770-4CE7-B05B-8FD6EE248E34}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CustomNethook</RootNamespace>
-    <AssemblyName>CustomNethook</AssemblyName>
+    <RootNamespace>RotaryPD</RootNamespace>
+    <AssemblyName>RotaryPD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="CustomNethook.ft" />
+    <None Include="RotaryPD.ft" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ChainDataInterop">
@@ -75,27 +75,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomNethook.cs" />
-    <Compile Include="CustomNethook.Designer.cs">
+    <Compile Include="RotaryPD.cs" />
+    <Compile Include="RotaryPD.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CustomNethook.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <DependentUpon>RotaryPD.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomNethook.resx">
-      <DependentUpon>CustomNethook.cs</DependentUpon>
+    <EmbeddedResource Include="RotaryPD.resx">
+      <DependentUpon>RotaryPD.cs</DependentUpon>
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>CustomNethook.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+      <LastGenOutput>RotaryPD.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
