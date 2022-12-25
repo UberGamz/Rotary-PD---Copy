@@ -8,10 +8,11 @@
     <OutputType>Library</OutputType>
     <RootNamespace>RotaryPD</RootNamespace>
     <AssemblyName>RotaryPD</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,9 +64,15 @@
     <Reference Include="ChainDataInterop">
       <HintPath>..\..\..\..\..\Program Files\Mastercam 2022\Mastercam\ChainDataInterop.dll</HintPath>
     </Reference>
+    <Reference Include="CLIProjectTemplate">
+      <HintPath>..\SurfaceInterop\CLIProjectTemplate\x64\Release\CLIProjectTemplate.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="NETHook3_0">
       <HintPath>..\..\..\..\..\Program Files\Mastercam 2022\Mastercam\NETHook3_0.dll</HintPath>
+    </Reference>
+    <Reference Include="SurfaceToolpathInterop">
+      <HintPath>..\..\..\..\..\Program Files\Mastercam 2022\Mastercam\SurfaceToolpathInterop.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
