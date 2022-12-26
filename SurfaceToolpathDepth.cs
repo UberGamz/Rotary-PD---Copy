@@ -6,11 +6,11 @@ using Mastercam.Operations;
 using System.Collections.Generic;
 using Mastercam.Database;
 
-namespace _RotaryPD
+namespace _SurfaceToolpathDepth
 {
-    public class RotaryPD : Mastercam.App.NetHook3App
+    public class SurfaceToolpathDepth : Mastercam.App.NetHook3App
     {
-        public Mastercam.App.Types.MCamReturn RotaryPDRun(Mastercam.App.Types.MCamReturn notused){
+        public Mastercam.App.Types.MCamReturn SurfaceToolpathDepthRun(Mastercam.App.Types.MCamReturn notused){
             var contourList = new List<int>();
             var pencilList = new List<int>();
             var selectedOps = SearchManager.GetOperations(true);

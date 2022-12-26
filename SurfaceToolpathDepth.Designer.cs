@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RotaryPD {
+namespace SurfaceToolpathDepth {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace RotaryPD {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class RotaryPD {
+    internal class SurfaceToolpathDepth {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal RotaryPD() {
+        internal SurfaceToolpathDepth() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace RotaryPD {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RotaryPD.RotaryPD", typeof(RotaryPD).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SurfaceToolpathDepth.SurfaceToolpathDepth", typeof(SurfaceToolpathDepth).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -81,7 +81,7 @@ namespace RotaryPD {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RotaryPD.
+        ///   Looks up a localized string similar to SurfaceToolpathDepth.
         /// </summary>
         internal static string RunTip {
             get {
