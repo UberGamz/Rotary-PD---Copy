@@ -5,12 +5,15 @@ using Mastercam.Operations.Types;
 using Mastercam.Operations;
 using System.Collections.Generic;
 using Mastercam.Database;
+using System;
 
 namespace _SurfaceToolpathDepth
 {
     public class SurfaceToolpathDepth : Mastercam.App.NetHook3App
     {
         public Mastercam.App.Types.MCamReturn SurfaceToolpathDepthRun(Mastercam.App.Types.MCamReturn notused){
+            var maxDepth = 0.0;
+            DialogManager.AskForNumber("Max Stepdown", ref maxDepth);
             var contourList = new List<int>();
             var pencilList = new List<int>();
             var selectedOps = SearchManager.GetOperations(true);
@@ -40,7 +43,7 @@ namespace _SurfaceToolpathDepth
             }
             foreach (var op in contourList)
             {
-                Mastercam.IO.Interop.SelectionManager.AlterContourFinish(0.2, -0.2, -0.2);
+                Mastercam.IO.Interop.SelectionManager.AlterContourFinish(Math.Abs(maxDepth), maxDepth, maxDepth);
                 var thisOp = SearchManager.GetOperation(op);
                 thisOp.MarkDirty();
                 thisOp.Commit(false);
@@ -48,7 +51,7 @@ namespace _SurfaceToolpathDepth
             OperationsManager.RefreshOperationsManager(true);
             foreach (var op in pencilList)
             {
-                Mastercam.IO.Interop.SelectionManager.AlterPencilFinish(true, -0.020, 0.00);
+                Mastercam.IO.Interop.SelectionManager.AlterPencilFinish(true, maxDepth, 0.00);
                 var thisOp = SearchManager.GetOperation(op);
                 thisOp.MarkDirty();
                 thisOp.Commit(false);
